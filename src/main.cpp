@@ -16,5 +16,8 @@ int main()
     const std::vector<float> emptyVector;
     showArray(pickMorphs(emptyVector));
 
+    const std::vector<float> smallVector {0.2, 0.4, 0.6};
+    showArray(pickMorphs(smallVector));
+
     return 0;
 }
