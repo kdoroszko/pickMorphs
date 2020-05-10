@@ -26,7 +26,7 @@ std::array<int, 4> pickMorphs(const std::vector<float>& weights)
     std::size_t firstValueIndex = 0;
     std::size_t secondValueIndex = -1, thirdValueIndex = -1, fourthValueIndex =-1;
 
-    for(auto it = weights.begin() + 1; it != weights.end(); ++it, ++counter)
+    for(auto it = weights.cbegin() + 1; it != weights.cend(); ++it, ++counter)
     {
         if(*it >= firstValue)
         {
